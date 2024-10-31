@@ -1,0 +1,60 @@
+.products {
+
+    padding-top: 570px;
+    margin-bottom: 50px;
+
+    .productsTitle {
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .borderProducts {
+        border: 1px solid black;
+        background: transparent;
+        padding: 10px;
+        overflow: hidden;
+
+        .productsContainer {
+            @extend .borderProducts;
+
+            article {
+                width: 45%;
+                display: inline-block;
+                padding: 20px;
+
+                .category {
+                    font-size: 22px;
+                    font-weight: 800;
+                    margin-bottom: 40px;
+                    text-align: center;
+                }
+                .artPiece {
+                    margin-bottom: 30px;
+                    padding-bottom: 20px;
+                    border-bottom: 2px dotted black;
+                    overflow: hidden;
+
+                    .name {
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                        float: left;
+                    }
+
+                    .price {
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                        float: right;
+                    }
+
+                    .description {
+                        font-size: 16px;
+                        color: #676767;
+                        clear: both;
+                    }
+                }
+            }
+        }
+    }
+}

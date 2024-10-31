@@ -1,0 +1,46 @@
+header {
+  width: 100%;
+  background: url("../Img/starNightVanGogh.jpg") rgb(0, 0, 107);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+}
+header .container {
+  position: relative;
+  height: 700px;
+}
+header .container .navigationMenu {
+  width: 100%;
+  text-align: right;
+}
+header .container .navigationMenu a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300px;
+  display: inline-block;
+  margin: 40px 20px;
+  text-decoration: none;
+  position: relative;
+}
+header .container .navigationMenu a:hover {
+  text-decoration: underline;
+}
+header .container .texts {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -52px;
+}
+header .container .texts .mainTitle {
+  font-size: 50px;
+  font-weight: 600;
+}
+header .container .texts .mainTitle span {
+  font-weight: 300;
+}
+header .container .texts h3 {
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+}/*# sourceMappingURL=header.css.map */

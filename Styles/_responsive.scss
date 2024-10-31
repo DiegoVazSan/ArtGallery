@@ -1,0 +1,106 @@
+@media screen and (max-width: 800px) {
+
+    header {
+        .container {
+            position: static;
+            height: auto;
+
+            .navigationMenu {
+                text-align: center;
+                a {
+                    margin: 10px 20px;
+                }
+            }
+
+            .texts {
+                position: static;
+                margin: 100px 0;
+
+                .mainTitle {
+                    font-size: 30px;
+                }
+                
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .main {
+
+        .about {
+            .imgContainer {
+                width: 100%;
+                height: 350px;
+                position: relative;
+            }
+    
+            article {
+                position: relative;
+                width: 100%;
+                top: -50px;
+                transform: translate(0px, 0);
+            }
+        }
+
+        .products {
+            padding-top: 100px;
+    
+            .productsContainer {
+                article {
+                    width: 100%;
+                }
+            }
+        }
+
+        .gallery {
+            .imgContainer {
+                width: 50%;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 420px) {
+
+    header {
+        .container {
+            .navigationMenu {
+                a {
+                    margin: 40px auto;
+                }
+            }
+        }
+    }
+
+    .main {
+        .about {
+            article {
+                h3 {
+                    font-size: 34px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .gallery {
+            .imgContainer {
+                height: 180px;
+            }
+        }
+        .location {
+            
+            .address {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .schedules {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

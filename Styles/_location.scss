@@ -1,0 +1,36 @@
+.location {
+    background: black;
+    color: #fff;
+    padding: 60px;
+    overflow: hidden;
+
+    .title {
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    
+    .address {
+        float: left;
+        width: 50%;
+
+        .street {
+            margin-bottom: 15px;
+        }
+    }
+
+    .schedules {
+        float: right;
+        text-align: right;
+        width: 50%;
+
+        h4 {
+            margin-bottom: 20px;
+        }
+    }
+    
+
+}
+

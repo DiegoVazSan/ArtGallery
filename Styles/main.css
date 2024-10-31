@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  background: url("../Img/starNightVanGogh.jpg") rgb(0, 0, 107);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+}
+header .container {
+  position: relative;
+  height: 700px;
+}
+header .container .navigationMenu {
+  width: 100%;
+  text-align: right;
+}
+header .container .navigationMenu a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300px;
+  display: inline-block;
+  margin: 40px 20px;
+  text-decoration: none;
+  position: relative;
+  background: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+header .container .navigationMenu a:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+}
+header .container .texts {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -52px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+header .container .texts .mainTitle {
+  font-size: 50px;
+  font-weight: 600;
+}
+header .container .texts .mainTitle span {
+  font-weight: 300;
+}
+header .container .texts h3 {
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.about .container {
+  overflow: visible;
+  position: relative;
+}
+.about .container .imgContainer {
+  width: 80%;
+  position: absolute;
+  left: 0;
+  top: -50px;
+  z-index: 0;
+  box-shadow: 0px 0px 50px rgb(0, 0, 0);
+}
+.about .container .imgContainer img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+.about .container article {
+  background: #fff;
+  padding: 40px;
+  width: 50%;
+  position: relative;
+  top: 500px;
+  float: right;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+.about .container article h3 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.about .container article p {
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.products {
+  padding-top: 570px;
+  margin-bottom: 50px;
+}
+.products .productsTitle {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.products .borderProducts, .products .borderProducts .productsContainer {
+  border: 1px solid black;
+  background: transparent;
+  padding: 10px;
+  overflow: hidden;
+}
+.products .borderProducts .productsContainer article {
+  width: 45%;
+  display: inline-block;
+  padding: 20px;
+}
+.products .borderProducts .productsContainer article .category {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.products .borderProducts .productsContainer article .artPiece {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px dotted black;
+  overflow: hidden;
+}
+.products .borderProducts .productsContainer article .artPiece .name {
+  font-size: 20px;
+  margin-bottom: 15px;
+  float: left;
+}
+.products .borderProducts .productsContainer article .artPiece .price {
+  font-size: 20px;
+  margin-bottom: 15px;
+  float: right;
+}
+.products .borderProducts .productsContainer article .artPiece .description {
+  font-size: 16px;
+  color: #676767;
+  clear: both;
+}
+
+.gallery {
+  background: black;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .imgContainer {
+  width: 25%;
+  height: 250px;
+}
+.gallery .imgContainer img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  opacity: 0.5;
+}
+.gallery .imgContainer img:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.location {
+  background: black;
+  color: #fff;
+  padding: 60px;
+  overflow: hidden;
+}
+.location .title {
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.location .address {
+  float: left;
+  width: 50%;
+}
+.location .address .street {
+  margin-bottom: 15px;
+}
+.location .schedules {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+.location .schedules h4 {
+  margin-bottom: 20px;
+}
+
+.mapViewer {
+  width: 100%;
+  overflow: hidden;
+}
+.mapViewer iframe {
+  width: 100%;
+  max-height: 600px;
+}
+
+footer {
+  color: #fff;
+  background: black;
+}
+footer .copyright {
+  text-align: center;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 800px) {
+  header .container {
+    position: static;
+    height: auto;
+  }
+  header .container .navigationMenu {
+    text-align: center;
+  }
+  header .container .navigationMenu a {
+    margin: 10px 20px;
+  }
+  header .container .texts {
+    position: static;
+    margin: 100px 0;
+  }
+  header .container .texts .mainTitle {
+    font-size: 30px;
+  }
+  header .container .texts h3 {
+    font-size: 18px;
+  }
+  .main .about .imgContainer {
+    width: 100%;
+    height: 350px;
+    position: relative;
+  }
+  .main .about article {
+    position: relative;
+    width: 100%;
+    top: -50px;
+    transform: translate(0px, 0);
+  }
+  .main .products {
+    padding-top: 100px;
+  }
+  .main .products .productsContainer article {
+    width: 100%;
+  }
+  .main .gallery .imgContainer {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 420px) {
+  header .container .navigationMenu a {
+    margin: 40px auto;
+  }
+  .main .about article h3 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .main .gallery .imgContainer {
+    height: 180px;
+  }
+  .main .location .address {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .main .location .schedules {
+    width: 100%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */
